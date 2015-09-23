@@ -1,0 +1,37 @@
+.cta {
+  padding:3.125em 0 3.125em 0;
+  .cta-body {
+    word-wrap: break-word;
+    .cta-text {
+      margin:0;
+      color:#ffffff;
+      font-weight:200;
+    }
+  }
+  .cta-button {
+    margin-top:1.136em;
+    text-align:center;
+  }
+}
+
+@media (min-width: 768px) {
+  .cta {
+    .cta-inner {
+      display:table;
+      table-layout:fixed;
+      width:100%;
+
+      .cta-body {
+        display: table-cell;
+        vertical-align: middle;
+        width:70%;
+      }
+      .cta-button {
+        display:table-cell;
+        vertical-align:middle;
+        width:30%;
+      }
+
+    }
+  }
+}

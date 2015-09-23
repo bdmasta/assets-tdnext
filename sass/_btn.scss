@@ -1,0 +1,73 @@
+.btn {
+  display: inline-block;
+  padding: 0.375em 0.750em;
+  margin-bottom: 0;
+
+  border:1px solid transparent;
+  @include border-radius(50px);
+
+  background-image: none;
+  background-color:transparent;
+
+  @include font-size(14px);
+  font-weight: 500;
+  line-height: 0.875em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transition: background 0.4s, color 0.4s;
+  -moz-transition: background 0.4s, color 0.4s;
+  -ms-transition: background 0.4s, color 0.4s;
+  -o-transition: background 0.4s, color 0.4s;
+  transition: background 0.4s, color 0.4s;
+}
+
+.btn-m {
+  padding: 0.556em 0.889em;
+  @include font-size(18px);
+
+}
+
+.btn-l {
+  padding: 0.727em 0.909em;
+  border-width: 0.091em;
+  @include font-size(22px);
+  font-weight:600;
+
+}
+
+.btn-brand {
+  border-color:$primary-color;
+  color:$primary-color;
+  &:hover,&:active, &:focus {
+    background-color:$primary-color;
+    color:#ffffff;
+  }
+}
+
+.btn-second {
+  border-color:$second-color;
+  color:$second-color;
+  &:hover,&:active, &:focus {
+    background-color:$second-color;
+    color:#ffffff;
+  }
+}
+
+.btn-white {
+  border-color:#ffffff;
+  color:#ffffff;
+  &:hover,&:active, &:focus {
+    background-color:#ffffff;
+    color:$second-color;
+  }
+}

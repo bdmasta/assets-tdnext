@@ -1,0 +1,44 @@
+.text-color {color:$text-color!important};
+.text-white {color:#ffffff!important};
+
+.primary-color {color:$primary-color!important};
+.second-color {color:$second-color!important};
+.primary-color-dark {color:$primary-color-dark!important};
+.second-color-light {color:$second-color-light!important};
+
+
+.sigfox-color {color:$sigfox-color!important};
+.avnet-color {color:$avnet-color!important};
+.silab-color {color:$silab-color!important};
+
+.bg-primary-color {background-color:$primary-color!important};
+.bg-second-color {background-color:$second-color!important};
+.bg-primary-color-dark {background-color:$primary-color-dark!important};
+.bg-second-color-light {background-color:$second-color-light!important};
+
+
+.bg-sigfox-color {background-color:$sigfox-color!important};
+.bg-avnet-color {background-color:$avnet-color!important};
+.bg-silab-color {background-color:$silab-color!important};
+
+.extra-light {font-weight:200!important};
+.light {font-weight:300!important};
+.normal {font-weight:400!important};
+.medium {font-weight:500!important};
+.semibold {font-weight:600!important};
+.bold {font-weight:700!important};
+.extrabold {font-weight:800!important};
+
+.uppercase {
+  text-transform:uppercase!important;
+}
+
+.img-center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.wide {
+  padding:0!important;
+}

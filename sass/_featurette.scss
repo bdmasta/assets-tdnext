@@ -1,0 +1,27 @@
+.featurette {
+  .featurette-header {
+    margin:0.952 0 0 0;
+    @include font-size(42px);
+    font-weight:400;
+  }
+
+  .featurette-description {
+    margin:1.538em 0 0.769em 0;
+    @include font-size(26px);
+    text-align:justify;
+  }
+
+  .featurette-img {
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .featurette {
+    .featurette-header {
+      margin:0;
+    }
+  }
+
+}

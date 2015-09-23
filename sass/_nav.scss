@@ -1,0 +1,118 @@
+/*----------CUSTOM SM BREAKPOINT----------*/
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    		top: 0;
+    		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		    margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
+
+
+.menu-base{
+  .nav-brand-toggle {
+    margin:0;
+    padding-top:1.500em;
+    padding-bottom:1.500em;
+    border:0;
+
+    &:hover {
+      cursor:pointer;
+      background-color:transparent;
+    }
+  }
+  .logo {
+    padding: 0 0.938em;
+    margin: 0.938em 0;
+    .logo-img {max-height:50px;}
+  }
+}
+
+.menu-base {
+  .navbar-nav>li>a {
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing: 0.063em;
+  }
+}
+
+@media(min-width:768px) {
+  .menu-base{
+    .navbar-nav {
+      margin-top:1.063em;
+      margin-bottom:1.063em;
+    }
+  }
+}
+
+.menu-brand {
+  background-color:#ffffff;
+  .navbar-nav>.active>a{
+    background-color:transparent;
+    color:$primary-color;
+    @include border-radius(50px);
+    &:hover, &:focus{
+      background-color:transparent;
+      color:$primary-color;
+      @include border-radius(50px);
+    }
+  }
+  .navbar-nav>li>a {
+    &:hover, &:focus {
+      background-color:transparent;
+      color:$primary-color;
+      @include border-radius(50px);
+    }
+  }
+}
+
+.menu-brand-inverted {
+  background-color:$second-color;
+  .navbar-nav>.active>a{
+    background-color:transparent;
+    color:$primary-color;
+    @include border-radius(50px);
+    &:hover, &:focus{
+      background-color:transparent;
+      color:$primary-color;
+      @include border-radius(50px);
+    }
+  }
+  .navbar-nav>li>a {
+    color:#ffffff;
+    &:hover, &:focus {
+      background-color:transparent;
+      color:$primary-color;
+      @include border-radius(50px);
+    }
+  }
+
+}

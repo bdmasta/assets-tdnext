@@ -1,0 +1,68 @@
+.hero-offer {
+  padding: 3.125em 0 3.125em 0;
+
+  .hero-offer-picto {max-width:182px;width:100%;}
+
+  .hero-offer-title {
+    margin-top:0.266em;
+    @include font-size(94px);
+    color:#ffffff;
+    font-weight:300;
+  }
+
+  .hero-offer-subtitle {
+    margin: 0 0 1.563em 0;
+    @include font-size(32px);
+    color:#ffffff;
+  }
+
+}
+
+.section-heading {
+  display:inline-block;
+  margin:0;
+  padding:0.238em 0.476em;
+  border:0.048em solid;
+  border-radius:1.190em;
+
+  @include font-size(42px);
+  font-weight: 400;
+}
+
+.section-heading-brand {
+  border-color:$primary-color;
+  color:$primary-color;
+}
+
+.section-heading-second {
+  border-color:$second-color;
+  color:$second-color;
+}
+
+.section-heading-inverse {
+  border-color:#ffffff;
+  color:#ffffff;
+}
+
+.section-subheading {
+  margin:1.429em 0;
+
+  @include font-size(35px);
+  font-weight: 400;
+}
+
+.section-subheading-inverse {color:#ffffff;}
+
+
+.basic-page-title {
+  margin:0;
+  line-height:initial;
+  @include font-size(55px);
+}
+
+.page-title-box {
+  padding:0 0.273em;
+  border: 2px solid $primary-color;
+  @include border-radius(50px);
+  color:$primary-color;
+}
