@@ -1,5 +1,7 @@
 .hero-offer {
-  padding: 3.125em 0 3.125em 0;
+  margin-top:-5.313em;
+  padding: 6.250em 0 3.125em 0;
+
 
   .hero-offer-picto {max-width:182px;width:100%;}
 
@@ -15,6 +17,8 @@
     @include font-size(32px);
     color:#ffffff;
   }
+
+  .down-bounce {margin:auto;}
 
 }
 

@@ -67,8 +67,19 @@
 @media(min-width:768px) {
   .menu-base{
     .navbar-nav {
-      margin-top:1.063em;
-      margin-bottom:1.063em;
+      margin-top:1.688em;
+      margin-bottom:1.688em;
+    }
+
+    .navbar-nav>li {
+      margin-right:10px;
+      &:last-child{
+        margin-right:0px;
+      }
+    }
+
+    .navbar-nav>li>a {
+      padding:0.313em 0.500em;
     }
   }
 }
@@ -76,43 +87,82 @@
 .menu-brand {
   background-color:#ffffff;
   .navbar-nav>.active>a{
-    background-color:transparent;
-    color:$primary-color;
+    background-color:$primary-color;
+    color:#ffffff;
     @include border-radius(50px);
     &:hover, &:focus{
-      background-color:transparent;
-      color:$primary-color;
+      background-color:$primary-color;
+      color:#ffffff;;
       @include border-radius(50px);
     }
   }
   .navbar-nav>li>a {
     &:hover, &:focus {
-      background-color:transparent;
-      color:$primary-color;
+      background-color:$primary-color;
+      color:#ffffff;
       @include border-radius(50px);
     }
   }
 }
 
 .menu-brand-inverted {
-  background-color:$second-color;
+  background-color:rgba(0,0,0,0.7);
   .navbar-nav>.active>a{
-    background-color:transparent;
-    color:$primary-color;
+    background-color:$primary-color;
+    color:#ffffff;
     @include border-radius(50px);
     &:hover, &:focus{
-      background-color:transparent;
-      color:$primary-color;
+      background-color:$primary-color;
+      color:#ffffff;;
       @include border-radius(50px);
     }
   }
   .navbar-nav>li>a {
+    background-color:transparent;
     color:#ffffff;
     &:hover, &:focus {
-      background-color:transparent;
-      color:$primary-color;
+      background-color:$primary-color;
+      color:#ffffff;
       @include border-radius(50px);
     }
   }
+}
 
+
+.nav-modules {
+  position:relative;
+  padding:0.625em 0;
+  z-index:999;
+  .modules-pills {
+    li {
+      a {
+        margin:0.227em;
+        padding: 0.0227em 0.682em;
+        border:0.091em solid #ffffff;
+        border-radius: 3.125em;
+        -moz-border-radius: 3.125em;
+        -webkit-border-radius: 3.125em;
+        @include font-size(22px);
+        color:#ffffff;
+        font-weight:500;
+
+        .td {font-weight:500;}
+
+        &:hover, &:focus {
+          background-color:#ffffff;
+          color:#8d8c8e;
+          opacity:1;
+          .td {color:#e32a48;}
+        }
+      }
+    }
+    li.active {
+      a {
+        background-color:#ffffff;
+        color:#8d8c8e;
+        opacity:1;
+        .td {color:#e32a48;}
+      }
+    }
+  }
 }
