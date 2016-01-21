@@ -201,11 +201,12 @@
     height:50px;
     width:50px;
     margin:0 auto -25px;
-
-    @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-primary@2x', png);
     background-repeat:no-repeat;
     background-position:center center;
     background-size:50px 50px;
+
+    @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-primary', png, 50px, 50px);
+
 
     z-index:999;
   }
@@ -218,18 +219,19 @@
     height:50px;
     width:50px;
     margin:-40px auto 25px auto;
-
-    @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-primary@2x', png);
     background-repeat:no-repeat;
     background-position:center center;
     background-size:50px 50px;
+
+    @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-primary', png, 50px, 50px);
+
 
     z-index:999;
   }
 }
 
 .plus-collapse-inverse {
-  .plus-img {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-inverse@2x', png);}
+  .plus-img {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/plus-inverse', png, 50px, 50px);}
 }
 
 .decoration-down {
@@ -239,17 +241,17 @@
   width: 68px;
   background-repeat:no-repeat;
   background-size: 68px 68px;
-  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-down@2x', png);
+  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-down', png, 68px, 68px);
 }
 
 /* Image style */
 #scrollUp {
-  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/arrow-up@2x', png);
   bottom: 20px;
   right: 20px;
   width: 60px;    /* Width of image */
   height: 60px;
   background-size:60px 60px;   /* Height of image */
+  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/arrow-up', png, 60px, 60px);
 }
 
 .down-bounce {
@@ -257,7 +259,7 @@
   width:48px;
   height:48px;
   background-size:48px 48px;
-  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/arrow-down-white@2x', png);
+  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/arrow-down-white', png, 48px, 48px);
 }
 
 @include keyframes(bounce) {

@@ -3,7 +3,7 @@
   padding: 0.375em 0.750em;
   margin-bottom: 0;
 
-  border:1px solid transparent;
+  border:2px solid transparent;
   @include border-radius(50px);
 
   background-image: none;
@@ -42,7 +42,21 @@
   border-width: 0.091em;
   @include font-size(22px);
   font-weight:600;
+}
 
+.btn-xl {
+  padding: 0.769em 0.846em;
+  border-width: 0.091em;
+  @include font-size(26px);
+  font-weight:600;
+}
+
+.btn-xxl {
+  padding: 0.263em 0.421em;
+  border-width: 0.091em;
+  @include font-size(38px);
+  font-weight:600;
+  @include border-radius(50px);
 }
 
 .btn-brand {
@@ -66,6 +80,16 @@
 .btn-white {
   border-color:#ffffff;
   color:#ffffff;
+  &:hover,&:active, &:focus {
+    background-color:#ffffff;
+    color:$second-color;
+  }
+}
+
+.btn-bg-white {
+  border-color:#ffffff;
+  color:$second-color;
+  background-color:#ffffff;
   &:hover,&:active, &:focus {
     background-color:#ffffff;
     color:$second-color;
