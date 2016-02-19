@@ -108,10 +108,9 @@
 
 .partners {
   .partners-heading {
-    display:inline-block;
     margin:0 0 1.190em 0;
     padding:0.238em 0.476em;
-    border:0.024em solid;
+    border:0em solid;
     border-radius:1.190em;
 
     @include font-size(42px);
@@ -182,6 +181,17 @@
   .circle-avnet:after{border-color:$avnet-color;}
   .circle-silab:after{border-color:$silab-color;}
 }
+
+@media (min-width: 768px) {
+  .partners {
+    .partners-heading {
+      display:inline-block;
+      border:0.024em solid;
+    }
+  }
+}
+
+
 
 
 .plus-collapse {
