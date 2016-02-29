@@ -1,0 +1,17 @@
+.alert-tdnext {
+  @include border-radius(50px);
+}
+
+.alert-tdnext-success {
+  border:0px;
+  background-color:rgba(25, 129, 125, 0.8);
+  color:#ffffff;
+  font-weight:600;
+}
+
+.alert-tdnext-danger {
+  border:0px;
+  background-color:rgba(229, 36, 72, 0.8);
+  color:#ffffff;
+  font-weight:600;
+}
